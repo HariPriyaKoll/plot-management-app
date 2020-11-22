@@ -14,10 +14,10 @@
             img-alt="Image" 
             img-top 
           >
-              <span> 
-                User{{ i }}
-                Contact No: 8723434210
-              </span>
+            <span>
+              User{{ i }}
+              Contact No: 8723434210
+            </span>
           </b-card>
         </b-card-group>
       </b-col>
