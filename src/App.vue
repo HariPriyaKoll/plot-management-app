@@ -12,6 +12,8 @@ import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import SiteView from '@/components/Site.vue';
+import RegisterSite from '@/components/Register.vue';
+
 
 Vue.use(VueRouter);
 
@@ -19,7 +21,8 @@ Vue.use(BootstrapVue);
 Vue.use(BootstrapVueIcons);
 
 const routes = [
-  { path: '/', component: SiteView, name: 'sites'}
+  { path: '/', component: SiteView, name: 'sites'},
+  { path: '/register/:id', component: RegisterSite, name: 'register'}
 ];
 
 export const siteAppRouter = new VueRouter({
