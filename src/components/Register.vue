@@ -44,7 +44,7 @@ export default class RegisterSite extends Vue {
     data.siteNo = Number(id);
     data.name = this.name;
     data.contactNo = Number(this.contactNo);
-    data.userId = "user"+id;
+    data.userId = 'user'+id;
     data.isRegistered = true;
     await store.dispatch(REGISTER, data).then(() => {
       this.showProgress = false;
